@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!-- font start  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Serif&display=swap" rel="stylesheet">
+    <!-- font end  -->
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+  
+<div class="date p-5">
+  <div class="container">
+    <p>click the button to show time and date</p>
+    <button type="button btn-success"  class="btn btn-primary" onclick="demo()">time and date</button>
+    <p id="custom"></p>
+  </div>
+</div>
+<!-- date end  -->
+<!-- light start  -->
+<div class="light p-5">
+  <div class="container">
+    <p>1. Bulb on-off</p>
+    <div class="blub-img"><img src="image/off.png" alt="" id="bulb"></div>
+    <div class="button mt-5">
+      <button class="on-button btn-info" type="button" onclick="bulbon()">bulb on</button>
+      <button class="off-button btn-danger" type="button" onclick="bulboff()">bulb off</button>
+    </div>
+  </div>
+</div>
+<!-- light end  -->
+<!-- font size start -->
+<div class="font-size p-5">
+  <div class="container">
+    <p>2.font size chnage</p>
+    <p class="change-txt" id="changetxt" >this text font will change click button</p>
+    <button type="button" class="btn btn-success" onclick="txt()" >font change</button>
+  </div>
+</div>
+<!-- font size end  -->
+<!-- txt none start  -->
+<div class="txt-none p-5">
+  <div class="container">
+    <p>3.text display none</p>
+    <p id="txtnone">this text will disappear</p>
+    <p id="txtblock" class="txt-block">this text is block</p>
+    <button type="button" class="btn btn-info" onclick="txtdisplaynone()">click here</button>
+    <button type="button" class="btn btn-primary" onclick="txtdisplayblock()">display block</button>
+  </div>
+</div>
+<!-- txt none end  -->
+<!-- text change start  -->
+<div class="text-change">
+  <div class="container">
+    <h2>4.Text change </h2>
+    <p id="txt">this text will change</p>
+    <button type="button" class="btn btn-success" onclick="txtchange()">click</button>
+  </div>
+</div>
+
+<div class="demo p-5">
+  <div class="container">
+    <!-- text change end  -->
+<h3>5.number can be writtern with or without decimals</h3>
+<p id="num"></p>
+
+<h3>6.string example</h3>
+<p id="str"></p>
+
+<!-- javascript variable  -->
+<h3>7.javascript vatiable</h3>
+<p>In this example, x is define as a variable . then ,x is assigned the value of 6</p>
+<p id="varriable"></p>
+<!-- javascript var  -->
+<h3>8.var variable key word</h3>
+<p>in this example, a, y, and z are variables</p>
+<p id="manyvariable"></p>
+<!-- javascript var end  -->
+<!-- javascript const  start  -->
+<h3>9.const varriable keyword </h3>
+<p>in this example of const varriable </p>
+<p id="constant"></p>
+
+<!-- javascript  const end  -->
+<!-- javascript operator start  -->
+<h3>10.subtraction operator</h3>
+<p id="subtraction"></p>
+<!-- Multiplication  -->
+<h3>11.Multiplication operator</h3>
+<p id="multiplication"></p>
+<!-- arithmetic operation -->
+<h3>12.arithmetic operation</h3>
+<p id="arithmetic"></p>
+<!-- percentage  -->
+<h3>13.percentage</h3>
+<p id="percentage"></p>
+
+<!-- javascript operator end  -->
+<!-- Incrementing start  -->
+<h3>14.Incrementing</h3>
+<p>this is incrementing demo 532 + + </p>
+<p id="incrementing"></p>
+<!-- Incrementing end  -->
+<!-- Decrementing start  -->
+<h3>15.Decrementing</h3>
+<p>this is Decrementing demo 32 - -  </p>
+<p id="decrementing"></p>
+<!-- Decrementing end  -->
+<!-- Exponentiation start  -->
+<h3>16.Exponentiation</h3>
+<p>this is Exponentiation demo 52 * * </p>
+<p id="exponentiation"></p>
+<!-- Exponentiation end  -->
+<!-- mathpow start  -->
+<h3>17.mathpow</h3>
+<p>this is mathpow demo it's same as exponentiation {math.pow(mathpow,2)}  </p>
+<p id="mathpow"></p>
+<!-- mathpow end  -->
+<!-- Operator Precedence -->
+<h3>18.Operator Precedence</h3>
+<p>Multiplication has precedence over addition.</p>
+<p id="pre"></p>
+<p id="pre-i"></p>
+
+
+  </div>
+</div>
+<!-- assignment oparetor start -->
+<div class="assignment px-5 ">
+  <div class="container">
+    <!-- plus equal oparator  -->
+    <h3>19.The += Operator</h3>
+    <p>this is += operator demo</p>
+    <p id="1stoperator"></p>
+    <!-- plus equal oparator  -->
+    <h3>20.The += Operator</h3>
+    <p>this is result of hello + everyone</p>
+    <p id="2ndoperator"></p>
+    <!-- multiplication  operator  -->
+    <h3>21.The *= Operator</h3>
+    <p>this is result of multiplication(60) *= 2</p>
+    <p id="multiplication-operator"></p>
+    <!--  Exponentiation  operator  -->
+    <h3>22.The **= Operator</h3>
+    <p>this is result of  exponentiation(20) **= 5</p>
+    <p id="exponentiation-operator"></p>
+    <!--  Division Assignment Operator   -->
+    <h3>23.The /= Operator</h3>
+    <p>this is result of  division(80) /= 2</p>
+    <p id="division-operator"></p>
+    <!--  Remainder Assignment Operator   -->
+    <h3>24.The %= Operator</h3>
+    <p>this is result of  Remainder(10) %= 8</p>
+    <p id="remainder-operator"></p>
+    <!--  Left Shift Assignment Operator   -->
+    <h3>25.The << = Operator</h3>
+    <p>this is result of  left shift(-200) << = 5</p>
+    <p id="leftshift-operator"></p>
+    <!--  right Shift Assignment Operator   -->
+    <h3>26.The >> = Operator</h3>
+    <p>this is result of  right shift(-200) >> = 5</p>
+    <p id="rightshift-operator"></p>
+    <!--  Unsigned left Shift Assignment Operator   -->
+    <h3>27.The <<< = Operator</h3>
+    <p>this is result of Unsigned right shift(-200) <<< = 5</p>
+    <p id="unsigned-left-shift-operator"></p>
+    <!--  Unsigned right Shift Assignment Operator   -->
+    <h3>28.The >>> = Operator</h3>
+    <p>this is result of Unsigned right shift(-200) >>> = 5</p>
+    <p id="unsigned-right-shift-operator"></p>
+    <!--  Bitwise AND Assignment Operator   -->
+    <h3>29.The & = Operator</h3>
+    <p>this is result of Bit wish and (51) & = 8</p>
+    <p id="bitwish-operator"></p>
+    <!--  Bitwise OR Assignment   -->
+    <h3>29.The | = Operator</h3>
+    <p>this is result of Bit wish or (51) | = 8</p>
+    <p id="bitwish-or-operator"></p>
+    <!--  Bitwise xOR Assignment   -->
+    <h3>30.The ^ = Operator</h3>
+    <p>this is result of Bit wish xor (64) ^ = 4</p>
+    <p id="bitwish-xor-operator"></p>
+    <!--  Logical AND Assignment   -->
+    <h3>31.The && = Operator</h3>
+    <p>this is result of  Logical AND (45) && = 6</p>
+    <p id="logical-operator"></p>
+    <!--   Logical OR   -->
+    <h3>32.The || = Operator</h3>
+    <p>this is result of   Logical OR (52) || = 8</p>
+    <p id="logicalor-operator"></p>
+    <!--   Nullish coalescing   -->
+    <h3>33.The ?? = Operator</h3>
+    <p>this is result of   Nullish coalescing (68) ?? = 3</p>
+    <p id="nullish-operator"></p>
+
+
+ 
+
+  </div>
+</div>
+<!-- assignment oparetor end -->
+<div class="p-5">
+  <div class="container">
+    <!-- Fahrenheit to Celsius -->
+    <h3>34.Fahrenheit to Celsius</h3>
+    <p>This example of Fahrenheit to Celsius</p>
+    <p id="fahrenheit-to-celsius"></p>
+    <!-- Local Variables -->
+    <h3>35.Local Variables</h3>
+    
+    <p id="car1"></p>
+    <p id="car2"></p>
+    <!-- JavaScript Objects -->
+    <h3>36.JavaScript Objects</h3>
+    <p id="name"></p>
+    <p id="type"></p>
+    <p id="model"></p>
+    <p id="color"></p>
+    <!--JavaScript Objects single line -->
+    <h3>37.JavaScript Objects single line</h3>
+    <p id="java-obj"></p>
+     <!-- The Integer Accuracy -->
+     <h3>38. bigint Number.isInteger() Method</h3>
+     <p>The isInteger() method returns true if the argument is an integer.</p>
+     <p>Otherwise it returns false.</p>
+     <p id="nin"></p>
+     <!-- The isSafeInteger() Method -->
+     <h3>39. bigint The isSafeInteger() Method</h3>
+     <p>The isSafeInteger() Method returns true if the argument is an integer.</p>
+     <p>Otherwise it returns false.</p>
+     <p id="nins"></p>
+     <!-- The toFixed() Method -->
+     <h3>40.number The toFixed() Method</h3>
+     <p>The toFixed() method rounds a number to a given number of digits.</p>
+     <p>For working with money, toFixed(2) is perfect.</p>
+     <p id="fixm"></p>
+     <!-- JavaScript Global Methods-->
+     <h3>41.JavaScript Global Methods</h3>
+     <p>The Number() method converts variables to numbers:</p>
+     <p id="glom"></p>
+     <!-- JavaScript Array splice-->
+     <h3>42.JavaScript Array splice</h3>
+     <p>The splice() method adds new elements to an array:</p>
+     <p id="spli-1"></p>
+     <p id="spli-2"></p>
+     <!-- Sorting an Array-->
+     <h3>43.Sorting an Array</h3>
+     <p>The sort() method sorts an array alphabetically:</p>
+     <p id="sora-1"></p>
+     <p id="sora-2"></p>
+     <!-- JavaScript Array Sort -->
+     <h3>44.JavaScript Array Sort</h3>
+     <p>Sort the array in ascending order:</p>
+     <p id="arrs-1"></p>
+     <p id="arrs-2"></p>
+     <!-- JavaScript Array Sort descending -->
+     <h3>45.JavaScript Array Sort descending</h3>
+     <p>Sort the array in descending order:</p>
+     <p id="drrs-1"></p>
+     <p id="drrs-2"></p>
+     <!-- JavaScript Array Sort array alphabetically or numerically -->
+     <h3>45.JavaScript Array Sort array alphabetically or numerically</h3>
+     <p>Click the buttons to sort the array alphabetically or numerically.</p>
+     <button class="btn btn-info" onclick="alfa()">Sort Alphabetically</button>
+     <button class="btn btn-success" onclick="numr()">Sort Numerically</button>
+     <p id="arran"></p>
+     <!-- array sort random number-->
+     <h3>46.JavaScript Array Sort random number</h3>
+     <p>Click the button (again and again) to sort the array in random order.</p>
+     <button class="btn btn-warning" onclick="ran()">Try it</button>
+     <p id="rnum"></p>
+     <!-- Array Sort highest number -->
+     <h3>47.Array Sort highest number</h3>
+     <p>The highest number is <span id="hinu"></span>.</p>
+     <!-- JavaScript Array.filter() -->
+     <h3>48.JavaScript Array.filter()</h3>
+     <p>Create a new array with all array elements that passe a test.</p>
+     <p id="fil"></p>
+      <!-- JavaScript Array.reduce() -->
+    <h3>49.JavaScript Array.reduce()</h3>
+    <p>This example finds the sum of all numbers in an array:</p>
+    <p id="rufi"></p>
+    <!-- JavaScript new Date() -->
+    <h3>50.JavaScript new Date()</h3>
+    <p>Using new Date(7 numbers), creates a new date object with the specified date and time:</p>
+    <p id="newda"></p>
+  </div>
+</div>
+<!-- jquary start  -->
+<div>
+  <div class="container">
+    <h1>jquary Example</h1>
+    <!-- hide and show -->
+    <h3>1.jquary hide and show </h3>
+    <p class="topic">click button to show hide text</p>
+    <button class="btn btn-success" id="hide">Hide</button>
+    <button class="btn btn-success" id="show">Show</button><br>
+     <!-- hide and show-->
+  <h3>2.jQuery hide and show with fade effect</h3>
+  <button class="btn btn-info" id="fade-b">Hide</button>
+  <button class="btn btn-info" id="fade-b2">Show</button>
+  <p class="text">This is a paragraph with short content.</p>
+  <p class="text">again small paragraph.</p><br>
+  <!-- jQuery toggle -->
+  <h3>3.jQuery toggle</h3>
+  <button class="btn btn-primary" id="toggle-b">toggle</button>
+  <p class="toggle-txt">This is a paragraph with little content.</p>
+  <p class="toggle-txt">This is another small paragraph.</p><br>
+   <!-- jQuery fadeIn-->
+  <h3>4.jQuery fadeIn Method</h3>
+  <p>fadeIn with different parameters.</p>
+  <button class="btn btn-success" id="fadein-ex">Fade In boxes</button>
+  <div id="box1"></div>
+  <div id="box2"></div>
+  <div id="box3"></div>
+   <!-- jQuery fadeout-->
+  <h3>4.jQuery fadeOut Method</h3>
+  <p>fadeOut with different parameters.</p>
+  <button class="btn btn-success" id="fadeout-ex">Fade Out boxes</button>
+  <div id="box4"></div>
+  <div id="box5"></div>
+  <div id="box6"></div>
+   <!-- jQuery fadeToggle  -->
+   <h3>6.jQuery fadeToggle Method</h3>
+   <p>Demonstrate fadeToggle with different speed parameters.</p>
+   <button id="fade-in-t" class="btn btn-primary">fade in/out boxes</button>
+   <div id="box7"></div>
+   <div id="box8"></div>
+   <div id="box9"></div>
+   <!-- jQuery fadeTo Method -->
+  <h3>7.jQuery fadeTo Method</h3>
+  <P>example fadeTo with different parameters.</P>
+  <button id="box-fade" class="btn btn-info">Click to fade boxes</button>
+  <div id="box10"></div>
+  <div id="box11"></div>
+  <div id="box12"></div>
+   <!-- jQuery slideDown Method -->
+   <h3>8.jQuery slideDown Method</h3>
+   <p>The jQuery slideDown method is used to slide down an element.</p>
+   <div id="sl-down">Click to slide down panel</div>
+   <div id="slide-txt">Hello,Everyone!</div>
+    <!-- jQuery slideDown Method -->
+  <h4>9.jQuery slideUp Method</h4>
+  <p>The jQuery slideUp method is used to slide up an element.</p>
+  <div id="sl-up">Click to slide down panel</div>
+  <div id="slide-txt1">Hello,Everyone!</div>
+    <!-- jQuery slide Toggle Method -->
+  <h4>10.jQuery slide toggle Method</h4>
+  <p>The jQuery slide toggle method is used to slide up an element.</p>
+  <div id="sl-toggle">Click to slide do toggle panel</div>
+  <div id="slide-txt2">Hello,Everyone!</div>
+
+
+  </div>
+</div>
+<!-- jquary end -->
+
+
+
+
+
+
+  <!-- js/jq link -->
+<script src="js/jquery-3.6.3.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
